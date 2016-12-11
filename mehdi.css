@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+.paraphwhite {
+    color: white;
+}
+
+.m-sectionbleue {
+    padding: 0 10%;
+    display: flex;
+    background-color: #32325D;
+    color: #AEE7FF;
+}
+
+.m-container1 {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.m-textefontchange {
+    font-size: 20px;
+}
+
+.m-listeuseless {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.m-textebloc {
+    width: 50%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.m-textebloc::before {
+    background-image: url("https://stripe.com/img/v3/payments/dev-checkmark.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    content: " ";
+}
+
+.m-container2 {
+    height: 700px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://stripe.com/img/v3/payments/graphic-developers/flowchart.svg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+.m-texteimg {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 105px;
+}
+
+.m-texteimg p {
+   margin: 0 5px;
+}
