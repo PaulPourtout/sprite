@@ -76,6 +76,7 @@ figure {
 .p-inline-elements {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -173,21 +174,22 @@ header {
 }
 
 .p-burger-menu {
-  height: 30px;
-  display: none;
-  background: none;
-  box-shadow: none;
-  border: none;
-  cursor: pointer;
+    height: 30px;
+    display: none;
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
 }
 
 .p-burger-menu span {
-  display: block;
-  margin-bottom: 5px;
-  width: 30px;
-  height: 4px;
-  background-color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
 }
+
 header .p-icon {
     width: 72px;
 }
@@ -297,9 +299,13 @@ header h2 {
     text-decoration: none;
 }
 
+/* Section blue sadia */
+
 .s-sectionblue {
+   position: relative;
     padding: 120px 0;
     background-color: #F6F9FC;
+    z-index: -10;
 }
 
 #s-titrebleu {
@@ -349,7 +355,26 @@ header h2 {
 /* =============== END PART 1 SADIA ============== */
 
 
+
 /* =============== PART MEHDI ============== */
+
+
+/* 1ère PARTIE BLEUE */
+.stripe-top-blue-section01, .stripe-top-blue-section02{
+   height: 300px;
+   background-color: #32325D;
+   width: 100%;
+   z-index: -5;
+   left: 0;
+}
+
+.stripe-top-blue-section01 {
+      top: -140px;
+}
+
+.stripe-top-blue-section02 {
+   bottom: -140px;
+}
 
 p {
     line-height: 1.5rem;
@@ -364,6 +389,8 @@ a {
 }
 
 .m-sectionbleue {
+   position: relative;
+   z-index: 5;
     padding: 0 10%;
     display: flex;
     background-color: #32325D;
@@ -372,10 +399,15 @@ a {
 
 .m-container1 {
     box-sizing: border-box;
-    width: 50%;
+    width: 70%;
     padding-right: 10%;
     display: flex;
     flex-flow: column wrap;
+}
+
+.p-inline-elements {
+    display: flex;
+    align-items: center;
 }
 
 .m-textefontchange {
@@ -386,11 +418,26 @@ a {
 .m-listeuseless {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
 }
 
 .m-textbloc {
-    width: 50%;
     box-sizing: border-box;
+    min-width: 240px;
+    max-width: 200px;
+    background-image: url("https://stripe.com/img/v3/payments/dev-checkmark.svg");
+    background-repeat: no-repeat;
+    padding-left: 6%;
+    background-position: 0 10%;
+}
+
+.m-iconetextbloc {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: -30px;
+    top: 15px;
 }
 
 .m-container2 {
@@ -398,52 +445,48 @@ a {
     background: url("https://stripe.com/img/v3/payments/graphic-developers/flowchart.svg");
     background-repeat: no-repeat;
     background-size: 89%;
-    height: 1169px;
+    height: 900px;
 }
 
 .m-container2 p {
-    margin-top: 100px;
+    margin-top: 77px;
     font-size: 12px;
     width: 50%;
     height: 60px;
-}
-
-.m-textimg, .m-textimg1, .m-textimg2, .m-textimg3 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
 }
 
-#m-textechiant {
-    display: block;
-    width: 40%;
+.m-textimg1, .m-textimg2, .m-textimg3 {
+    display: flex;
 }
 
 .m-textimg1 {
-    padding-top: 40%;
+    padding-top: 6%;
 }
 
 
 /* 2ème PARTIE BLEUE */
 
 .m-sectionbleue2 {
-    position: relative;
     background-color: #3B3C74;
-    height: 325px;
+    /*height: 325px;*/
+    position: relative;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
 }
 
 #m-tel1 {
     position: absolute;
     top: 0px;
-    left: 106px;
+    right: 75%;
 }
 
 #m-tel2 {
     position: absolute;
-    top: -57px;
-    left: 305px;
+    top: -70px;
+    right: 52%;
+    z-index: 50;
 }
 
 .m-textsection2 {
@@ -456,6 +499,10 @@ a {
     color: #AEE7FF;
 }
 
+.m-textsection2 h4 {
+   margin: 0;
+}
+
 
 /*3ème PARTIE BLEUE*/
 
@@ -463,6 +510,7 @@ a {
     display: flex;
     padding-top: 10%;
     background-color: #32325D;
+    position: relative;
 }
 
 .m-textsection3 {
@@ -487,7 +535,7 @@ a {
     right: 135px;
     width: 100%;
     height: 250px;
-    transform: perspective(900px) rotateY(-25deg);
+    transform: perspective(400px) rotateY(-25deg);
 }
 
 
@@ -535,6 +583,34 @@ a {
 
 
 /* =============== END PART 2 SADIA ============== */
+
+/* CARDS */
+.p-link-card {
+   display: flex;
+   width: 50%;
+   align-items: center;
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   margin: 10px 0;
+   transition: 0.3s;
+}
+
+.p-link-card:hover {
+   transform: translateY(-10px);
+}
+.p-link-card figure {
+   width: 70px;
+   position: relative;
+   right: 70px;
+}
+
+.p-link-card figure svg {
+   width: 130px;
+}
+
+.p-card-paraph {
+   padding: 5px;
+}
 
 
 /* ===================== FOOTER ================= */
@@ -665,10 +741,9 @@ footer .p-inline-elements {
         align-items: flex-start;
         width: 100%;
     }
-    
     /* HEADER */
     .p-burger-menu {
-      display: block;
+        display: block;
     }
     .p-main-title {
         width: 100%;
@@ -688,16 +763,13 @@ footer .p-inline-elements {
         width: 100%;
         box-sizing: border-box;
     }
-
     .p-footer-col-01 div {
-      display: flex;
-      align-items: center;
+        display: flex;
+        align-items: center;
     }
-
     .p-footer-col {
         margin-bottom: 20px;
     }
-
     .column-divide {
         flex-direction: column;
     }
