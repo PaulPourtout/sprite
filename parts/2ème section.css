@@ -1,0 +1,115 @@
+/* 1ère PARTIE BLEUE */
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+p {
+  line-height: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+.paraphwhite {
+  color: white;
+}
+.m-sectionbleue {
+  padding: 0 10%;
+  display: flex;
+  background-color: #32325D;
+  color: #AEE7FF;
+}
+.m-container1 {
+  box-sizing: border-box;
+  width: 50%;
+  padding-right: 10%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.m-textefontchange {
+  font-size: 22px;
+  font-weight: lighter;
+}
+.m-listeuseless{
+  display: flex;
+  flex-wrap: wrap;
+}
+.m-textbloc {
+  width: 50%;
+  box-sizing: border-box;
+}
+.m-container2 {
+  width: 50%;
+  background: url("https://stripe.com/img/v3/payments/graphic-developers/flowchart.svg");
+  background-repeat: no-repeat;
+  background-size: 89%;
+  height:1169px;
+}
+.m-container2 p {
+  margin-top: 100px;
+  font-size: 12px;
+  width: 50%;
+  height: 60px;
+}
+.m-textimg, .m-textimg1,  .m-textimg2, .m-textimg3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#m-textechiant {
+}
+.m-textimg1 {
+  padding-top: 40%;
+}
+
+/* 2ème PARTIE BLEUE */
+.m-sectionbleue2 {
+  background-color: #3B3C74;
+  height: 325px;
+}
+#m-tel1 {
+  position: absolute;
+  top: 1168px;
+  left: 106px;
+}
+#m-tel2 {
+  position:absolute;
+  top: 1111px;
+  left: 305px;
+}
+.m-textsection2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 53%;
+  padding-right: 10%;
+  color: #AEE7FF;
+}
+
+/*3ème PARTIE BLEUE*/
+.m-sectionbleue3 {
+  display: flex;
+  padding-top: 10%;
+  background-color: #32325D;
+}
+.m-textsection3 {
+padding: 5%;
+color: #9CDBFF;
+display: flex;
+}
+.m-imgsection3 {
+  position: relative;
+}
+#m-imgonline {
+  width: 100%;
+  height: 400px;
+  transform: perspective(900px) rotateY(30deg);
+}
+#m-imgonline2 {
+  position: absolute;
+  top: 160px;
+  right: 135px;
+  width: 100%;
+  height: 250px;
+  transform: perspective(900px) rotateY(-25deg);
+}

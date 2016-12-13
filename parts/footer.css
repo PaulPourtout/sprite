@@ -1,0 +1,182 @@
+/* CLASSES GENERALES */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+.p-btn {
+    position: relative;
+    bottom: 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 3%;
+    font-size: 0.9rem;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.p-btn:hover {
+    bottom: 3px;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.p-btn-dark {
+    color: #fff;
+    background-color: #32325D;
+}
+
+.p-btn-dark:hover {
+    background-color: #43458B;
+}
+
+.p-btn-light {
+    color: #6790E8;
+    background-color: #fff;
+}
+
+.p-btn-light:hover {
+    color: #85abff;
+}
+
+.p-btn-blue {
+    color: #fff;
+    background-color: #6772e5;
+}
+
+.p-btn-blue:hover {
+    background-color: #7794F8;
+}
+
+.stripe {
+    position: absolute;
+    transform: skewY(-12deg);
+}
+
+.p-inline-elements {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ===== FOOTER ==== */
+footer {
+  margin-top: 200px;
+  background-color: #F4F7FB;
+  position: relative;
+}
+.stripe-footer {
+  height: 300px;
+  width: 100%;
+  z-index: -10;
+  top: -150px;
+  background-color: #F4F7FB;
+}
+
+/* FOOTER TOP */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+}
+
+footer .p-inline-elements {
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.footer-top .p-footer-text-container p {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer-top .p-footer-text-container p:nth-child(1) {
+    color: #6772E5;
+}
+
+.footer-top .p-footer-text-container p:nth-child(2) {
+  color: #32325D;
+}
+
+
+/* NAV FOOTER */
+.nav-footer {
+  border-top: 2px solid #ECF1F5;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+
+/* NAV FOOTER 01 */
+.nav-footer .p-footer-col-01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #CFD7DF;
+    font-size: 0.9rem;
+}
+
+.nav-footer .p-footer-col-01 a {
+    display: block;
+    margin-bottom: 10px;
+    color: #6772e5;
+    font-weight: bold;
+}
+
+
+/* MAIN NAV FOOTER */
+.p-footer-nav-container {
+  display: flex;
+}
+
+
+.nav-footer h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.nav-footer ul {
+  list-style: none;
+}
+
+.nav-footer li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.p-footer-col a, .nav-footer h4 {
+  color: #8898aa;
+  transition: 0.3s;
+}
+
+.p-footer-col a:hover {
+  color: #32325d;
+}
+
+.p-footer-col:not(:last-of-type) {
+margin-right: 50px;
+}
+.column-divide {
+  display: flex;
+}

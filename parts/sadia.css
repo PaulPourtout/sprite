@@ -1,0 +1,209 @@
+/* PART 1 */
+.s-introtext{
+
+  font-size: 24px;
+
+line-height: 36px;
+
+width: 50%;
+
+margin-left: 50px;
+
+box-sizing: border-box;
+
+color:#525F7F;
+
+}
+
+.s-paraph{
+
+  display: inline-flex;
+
+  margin-bottom: 70px;
+
+}
+
+#s-containerfirst {
+
+box-sizing: border-box;
+
+}
+
+#s-containertwo {
+
+  box-sizing: border-box;
+
+}
+
+#s-containerthree {
+
+  box-sizing: border-box;
+
+}
+
+.s-titres{
+
+  list-style-type: : none;
+
+  margin-bottom: 10px;
+
+  font-weight: 500;
+
+font-size: 19px;
+
+line-height: 28px;
+
+color: #32325d;
+
+}
+
+.s-paragraphes {
+
+  list-style-type: : none;
+
+  display:inline;
+
+  justify-content: space-around;
+
+  margin-bottom: 10px;
+
+  font-weight: 400;
+
+font-size: 17px;
+
+line-height: 26px;
+
+color: #6b7c93;
+
+}
+
+.paraphblue {
+
+  color: #6772e5;
+
+font-weight: 500;
+
+cursor: pointer;
+
+text-decoration: none;
+
+}
+
+.s-sectionblue {
+
+padding: 120px 0;
+
+background-color: #F6F9FC;
+
+}
+
+#s-titrebleu {
+
+  color: #6772e5;
+
+  margin-bottom: 10px;
+
+  font-size: 22px;
+
+    line-height: 33px;
+
+}
+
+#s-paraphsectionblue {
+
+  color:#525F7F;
+
+  font-size: 24px;
+
+line-height: 36px;
+
+}
+
+#s-titrecard {
+
+  font-weight: 500;
+
+    font-size: 19px;
+
+    line-height: 28px;
+
+    color: #32325d;
+
+}
+
+#s-paraphsectionbluetwo {
+
+  font-weight: 400;
+
+    font-size: 17px;
+
+    line-height: 26px;
+
+    color: #6b7c93;
+
+}
+
+#s-paraphcontainer {
+
+  font-weight: 400;
+
+font-size: 17px;
+
+line-height: 26px;
+
+color: #6b7c93;
+
+}
+
+.s-menucard {
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+
+  padding: 9px 13px;
+
+  display: block;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+}
+/* PART 1 END */
+
+/* PART 2 */
+.s-titreparttwo {
+  color: #6772E5;
+  padding-left: 90px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.s-parttwo {
+font-weight: 400;
+  font-size: 24px;
+    line-height: 36px;
+    color: #525f7f;
+    text-rendering: optimizeLegibility;
+}
+.paraphblue {
+  color: #6772e5;
+font-weight: 500;
+cursor: pointer;
+text-decoration: none;
+}
+.s-paraphparttwo {
+  font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #6b7c93;
+}
+.s-minititreparttwo {
+  font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    color: #32325d;
+    margin-bottom: 10px;
+}
+
+/* PART 2 END */
