@@ -235,7 +235,7 @@ header h2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    background-image: url("img/devices.png");
+    background-image: url("image%20stripe/devices.png");
     height: 950px;
     width: 50%;
 }
@@ -255,21 +255,19 @@ header h2 {
     color: #525F7F;
 }
 
+#s-section01 .s-paraph {
+    padding: 0 5%;
+}
+
 .s-paraph {
-    display: inline-flex;
+    display: flex;
     margin-bottom: 70px;
+    flex-wrap: wrap;
 }
 
-#s-containerfirst {
+#s-containerfirst, #s-containertwo, .s-containerthree {
     box-sizing: border-box;
-}
-
-#s-containertwo {
-    box-sizing: border-box;
-}
-
-#s-containerthree {
-    box-sizing: border-box;
+    width: 33%;
 }
 
 .s-titres {
@@ -299,13 +297,9 @@ header h2 {
     text-decoration: none;
 }
 
-/* Section blue sadia */
-
 .s-sectionblue {
-   position: relative;
-    padding: 120px 0;
+    padding: 120px 5%;
     background-color: #F6F9FC;
-    z-index: -10;
 }
 
 #s-titrebleu {
@@ -342,6 +336,12 @@ header h2 {
     color: #6b7c93;
 }
 
+#s-bullejaune {
+    position: absolute;
+    right: -40px;
+    overflow: hidden;
+}
+
 .s-menucard {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -351,29 +351,83 @@ header h2 {
     overflow: hidden;
 }
 
+.s-email {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 9px 13px;
+    background: transparent;
+    font: inherit;
+    color: #32325d;
+}
+
+.s-boutonnotif {
+    color: #7795f8;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 9px 13px;
+    font: inherit;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .025em;
+    cursor: pointer;
+    position: relative;
+    transition: all .15s ease;
+    padding-left: 15px;
+}
+
+#s-container {
+    background-color: white;
+    width: 25%;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-right: 115px;
+    padding-bottom: 45px;
+    padding-left: 55px;
+}
+
+.s-titlecard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-right: 115px;
+    padding-bottom: 45px;
+    padding-left: 55px;
+}
+
 
 /* =============== END PART 1 SADIA ============== */
-
 
 
 /* =============== PART MEHDI ============== */
 
 
 /* 1ère PARTIE BLEUE */
-.stripe-top-blue-section01, .stripe-top-blue-section02{
-   height: 300px;
-   background-color: #32325D;
-   width: 100%;
-   z-index: -5;
-   left: 0;
+
+.stripe-top-blue-section01, .stripe-top-blue-section02 {
+    height: 300px;
+    background-color: #32325D;
+    width: 100%;
+    z-index: -5;
+    left: 0;
 }
 
 .stripe-top-blue-section01 {
-      top: -140px;
+    top: -140px;
 }
 
 .stripe-top-blue-section02 {
-   bottom: -140px;
+    bottom: -140px;
 }
 
 p {
@@ -389,8 +443,8 @@ a {
 }
 
 .m-sectionbleue {
-   position: relative;
-   z-index: 5;
+    position: relative;
+    z-index: 5;
     padding: 0 10%;
     display: flex;
     background-color: #32325D;
@@ -500,7 +554,7 @@ a {
 }
 
 .m-textsection2 h4 {
-   margin: 0;
+    margin: 0;
 }
 
 
@@ -517,6 +571,11 @@ a {
     padding: 5%;
     color: #9CDBFF;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.m-textsection3-gauche, .m-textsection3-droite {
+    width: 50%;
 }
 
 .m-imgsection3 {
@@ -544,10 +603,26 @@ a {
 
 /* =============== PART 2 SADIA ============== */
 
+#section-white-02 {
+    margin-top: 300px;
+}
+
+.section-white-02-title {
+    width: 65%;
+    padding-left: 30%;
+}
+
+#s-imageonetwo {
+    display: flex;
+}
+
+#s-la {
+    width: 40%;
+}
+
 .s-titreparttwo {
     color: #6772E5;
-    padding-left: 90px;
-    margin-bottom: 50px;
+    padding-left: 10px;
     position: relative;
 }
 
@@ -567,10 +642,25 @@ a {
 }
 
 .s-paraphparttwo {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 150px;
     font-weight: 400;
     font-size: 17px;
     line-height: 26px;
     color: #6b7c93;
+    flex-wrap: wrap;
+}
+
+#s-imageordi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    ;
+    align-content: stretch;
 }
 
 .s-minititreparttwo {
@@ -581,42 +671,134 @@ a {
     margin-bottom: 10px;
 }
 
+.s-devicesdescription {
+    font-size: 0.9rem;
+    line-height: 23px;
+    color: #525f7f;
+    width: 40%;
+    padding-left: 20%;
+}
+
+.s-paraphtwo {
+    margin: 15px;
+    z-index: 501;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 40px 40px 40px 120px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.s-titrecontainparttwo :hover {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em color: #24b47e;
+}
+
+.s-titrecontaintwotwo :hover {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em color: #32325d;
+}
+
+.s-paraphcontainertwo {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #6b7c93;
+}
+
 
 /* =============== END PART 2 SADIA ============== */
 
+
 /* CARDS */
+
+.p-cards-container {
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
 .p-link-card {
-   display: flex;
-   width: 50%;
-   align-items: center;
-   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-   padding: 10px;
-   margin: 10px 0;
-   transition: 0.3s;
+    box-sizing: border-box;
+    display: flex;
+    color: #6b7c93;
+    width: 45%;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.p-card-paraph p {
+    font-size: 0.9rem;
+}
+
+.p-green-card-title, .p-blue-card-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0;
+    transition: 0.3s;
+}
+
+.p-green-card-title {
+    color: #24b47e;
+}
+
+.p-blue-card-title {
+    color: #3297d3;
+}
+
+.hover-fillDark, .hover-fillLight {
+    transition: 0.3s;
 }
 
 .p-link-card:hover {
-   transform: translateY(-10px);
+    transform: translateY(-10px);
 }
+
+.p-link-card:hover h4 {
+    color: #6b7c93;
+}
+
+.p-link-card:hover .hover-fillDark {
+    fill: #6b7c93;
+}
+
+.p-link-card:hover .hover-fillLight {
+    fill: #aebacb;
+}
+
 .p-link-card figure {
-   width: 70px;
-   position: relative;
-   right: 70px;
+    width: 70px;
+    position: relative;
+    right: 70px;
 }
 
 .p-link-card figure svg {
-   width: 130px;
+    width: 130px;
 }
 
 .p-card-paraph {
-   padding: 5px;
+    padding: 5px;
 }
 
 
 /* ===================== FOOTER ================= */
 
 footer {
-    margin-top: 200px;
+    margin-top: 50px;
     background-color: #F4F7FB;
     position: relative;
 }
@@ -735,32 +917,34 @@ footer .p-inline-elements {
 
 @media screen and (max-width: 640px) {
     /* CLASSES GENERALES */
+    /* To 100% Width */
+    .p-main-title, .p-text-block .p-inline-elements, footer .p-inline-elements, header .p-text-block-container, .nav-footer, .p-link-card, .m-textsection3-gauche, .m-textsection3-droite, .nav-footer .p-footer-col-01, #s-la {
+        width: 100%;
+    }
     .p-text-block .p-inline-elements, footer .p-inline-elements, .nav-footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
     }
     /* HEADER */
     .p-burger-menu {
         display: block;
     }
     .p-main-title {
-        width: 100%;
         font-size: 2.4rem;
         margin: 0;
     }
     #nav-header ul, #p-devices-container {
         display: none;
     }
-    header .p-text-block-container {
-        width: 100%;
+    /* PARTIE BLEUE*/
+    .m-container2 {
+        display: none;
     }
     /* FOOTER */
     .nav-footer .p-footer-col-01 {
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
         box-sizing: border-box;
     }
     .p-footer-col-01 div {
